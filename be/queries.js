@@ -1,11 +1,12 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user: process.env.DB_USER || 'admin1',
-  host: process.env.DB_HOST || '10.88.231.1821',
-  database: process.env.DB_NAME || 'users1',
-  password: process.env.DB_PASSWORD || 'admin1',
+  user: process.env.DB_USER || 'labadmin@postgresql-server-nghiattr',
+  host: process.env.DB_HOST || 'postgresql-server-nghiattr.postgres.database.azure.com',
+  database: process.env.DB_NAME || 'postgres',
+  password: process.env.DB_PASSWORD || 'H@Sh1CoR3!',
   port: 5432,
 })
+
 
 const getUsers = (request, response) => {
   
